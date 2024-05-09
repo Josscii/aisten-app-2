@@ -7,17 +7,25 @@ import Layout from "../layouts/Layout.astro";
     <div class="container mx-auto p-6 lg:p-24 lg:h-full">
       <div class="flex flex-col lg:h-full lg:flex-row">
         <div class="flex flex-1 flex-col">
-          <img
-            class="w-12 rounded-lg border"
-            src="app-icon.webp"
-            alt="app icon"
-          />
+          <div class="flex items-center">
+            <img
+              class="w-12 rounded-lg border"
+              src="app-icon.webp"
+              alt="app icon"
+            />
+            <a
+              class="flex ml-auto justify-center items-center w-24 h-10 rounded-lg bg-indigo-500 text-white lg:hidden"
+              href="https://apps.apple.com/app/aisten-podcast-transcription/id6453694910"
+            >
+              AppStore
+            </a>
+          </div>
 
           <div class="flex-1 flex flex-col justify-center lg:pb-12">
             <h1 class="text-9xl font-medium text-indigo-950">Aisten</h1>
             <p class="text-5xl text-indigo-950">Listen, Read, Learn Language</p>
             <a
-              class="flex justify-center items-center w-24 h-10 rounded-lg bg-indigo-500 text-white mt-4"
+              class="hidden justify-center items-center w-24 h-10 rounded-lg bg-indigo-500 text-white mt-4 lg:flex"
               href="https://apps.apple.com/app/aisten-podcast-transcription/id6453694910"
             >
               AppStore
