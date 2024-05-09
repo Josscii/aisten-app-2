@@ -4,14 +4,16 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Aisten - Podcast Transcription">
   <div class="bg-indigo-50 lg:h-full">
-    <div class="container mx-auto px-8 py-8 lg:py-24 lg:h-full">
-      <div
-        class="flex flex-col justify-center gap-8 lg:gap-32 lg:flex-row lg:h-full"
-      >
-        <div class="flex flex-col">
-          <img class="w-12 rounded-lg border" src="app-icon.webp" alt="" />
+    <div class="container mx-auto p-6 lg:p-24 lg:h-full">
+      <div class="flex flex-col lg:h-full lg:flex-row">
+        <div class="flex flex-1 flex-col">
+          <img
+            class="w-12 rounded-lg border"
+            src="app-icon.webp"
+            alt="app icon"
+          />
 
-          <div class="flex-1 flex flex-col justify-center">
+          <div class="flex-1 flex flex-col justify-center lg:pb-12">
             <h1 class="text-9xl font-medium text-indigo-950">Aisten</h1>
             <p class="text-5xl text-indigo-950">Listen, Read, Learn Language</p>
             <a
@@ -22,11 +24,8 @@ import Layout from "../layouts/Layout.astro";
             </a>
           </div>
         </div>
-
-        <div class="flex flex-col gap-2 lg:flex-row">
-          <img src="preview1.webp" alt="" />
-          <img src="preview2.webp" alt="" />
-        </div>
+        <img class="max-h-full w-auto" src="preview1.webp" alt="preview2" />
+        <img class="max-h-full w-auto" src="preview2.webp" alt="preview2" />
       </div>
     </div>
   </div>
