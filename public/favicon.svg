@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1024x1024</title>
+    <g id="1024x1024" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="bg" fill="#F5F3FF" x="0" y="0" width="1024" height="1024"></rect>
+        <text id="𝔸" font-family="STIXTwoMath-Regular, STIX Two Math" font-size="1000" font-weight="normal" line-spacing="658" fill="#8B5CF6">
+            <tspan x="189" y="945">𝔸</tspan>
+        </text>
+    </g>
+</svg>
