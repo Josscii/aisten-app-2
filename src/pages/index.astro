@@ -28,8 +28,8 @@ import Layout from "../layouts/Layout.astro";
             <h1 class="text-6xl font-medium text-indigo-950 lg:text-9xl">
               Aisten
             </h1>
-            <p class="text-2xl text-indigo-950 lg:text-5xl">
-              Listen, Read, Learn Language
+            <p id="subtitle" class="text-2xl text-indigo-950 lg:text-5xl">
+              Podcast Transcription
             </p>
             <a
               class="hidden mt-4 lg:flex"
@@ -48,3 +48,55 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </div>
 </Layout>
+
+<style>
+  #subtitle.change {
+    animation: changetext 1s ease-in-out;
+  }
+
+  @keyframes changetext {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+
+<script>
+  const texts = [
+    "Podcast Transcription",
+    "Multi-lang AI Speech-to-Text",
+    "Listen, Read, Learn Language",
+    "One Click Translation",
+    "Import Local Files & Links",
+  ];
+
+  let currentIndex = 0;
+
+  function showNextText() {
+    currentIndex = (currentIndex + 1) % texts.length;
+
+    const text = texts[currentIndex];
+
+    const subtitleElement = document.getElementById("subtitle");
+
+    subtitleElement.classList.add("change");
+
+    setTimeout(() => {
+      subtitleElement.textContent = text;
+    }, 500);
+
+    setTimeout(() => {
+      subtitleElement.classList.remove("change");
+    }, 1000);
+  }
+
+  setInterval(showNextText, 3000);
+</script>
